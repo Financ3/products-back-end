@@ -118,7 +118,7 @@ In this step, we are going to add massive to the server so we can connect to a d
 * Open the `.env` file and create a variable called `CONNECTION_STRING` that equals the URI connection string from your Heroku database.
   * If you copy your connection string from SQL Tabs, make sure to remove the `?ssl=true` from the end.
 * Use `massive` and the `CONNECTION_STRING` to establish a connection.
-  * Envoke `massive` and pass in an object containing `connectionString` and `ssl` properties
+  * Invoke `massive` and pass in an object containing `connectionString` and `ssl` properties
 * In the `.then` callback from `massive`, set `db` on app to equal the database instance.
 * Make sure to add a `.catch()` with a callback function. 
 * In the callback of the `.catch`, `console.log` the error that would be received if the request was rejected.
